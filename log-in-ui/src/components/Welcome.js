@@ -6,9 +6,10 @@ import google_icon from "../assets/google.png";
 import faecbook_icon from "../assets/facebook.png";
 import apple_icon from "../assets/apple.png";
 import banner from "../assets/banner.jpg";
-import { Switch, Route } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const welcome = () => {
+const Welcome = () => {
+	const navigate = useNavigate();
 	return (
 		<div className="welcome">
 			<img src={banner} alt="banner" />
@@ -17,11 +18,11 @@ const welcome = () => {
 				<h6>Get started by logging in or signing up.</h6>
 			</div>
 			<div className="buttons">
-				<button>Log In</button>
-				<button>Create an Account</button>
+				<button onClick={() => navigate("/login")} className="login-btn">Log In</button>
+				<button className="signup-btn">Create an Account</button>
 			</div>
 		</div>
 	);
 }
 
-export default welcome;
+export default Welcome;
