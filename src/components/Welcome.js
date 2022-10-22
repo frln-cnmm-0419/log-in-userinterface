@@ -6,7 +6,9 @@ import google_icon from "../assets/google.png";
 import faecbook_icon from "../assets/facebook.png";
 import apple_icon from "../assets/apple.png";
 import banner from "../assets/banner.jpg";
+import login from "./login"
 import { useNavigate } from "react-router-dom";
+import { BrowserRouter as Routes, Router, Route, Link } from "react-router-dom";
 
 const Welcome = () => {
 	const navigate = useNavigate();
