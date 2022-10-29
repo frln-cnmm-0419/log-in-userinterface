@@ -1,13 +1,13 @@
 import React from "react";
 import "../styling/global.scss";
 import "../styling/welcome.scss"
-import banner from "../assets/banner.jpg"
 import { Link } from "react-router-dom"
+import logo from "../assets/logo.webp"
 
 const Welcome = () => {
 	return (
 		<div className="welcome">
-			<img src={banner} alt="banner" />
+			<img src={logo} alt="banner" />
 			<div className="title">
 				<h1>Your all in one task organizer!</h1>
 				<h6>Get started by logging in or signing up.</h6>
